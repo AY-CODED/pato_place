@@ -1,0 +1,1515 @@
+/*Global Styles */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    /* overflow: hidden;     */
+}
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    font-size: 16px;
+
+}
+
+#main{
+    background-color: white;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Navigation Styles*/
+.navbar {
+    width: 100%;
+    background: #1a1a1a;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav-logo img {
+    width: 80px;
+}
+
+/* Desktop Navigation */
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    font-family: "Shafarik", serif;
+}
+
+.nav-list a:hover {
+    color: #d35400;
+}
+
+/* Mobile Menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background: #1a1a1a;
+    width: 200px;
+    list-style: none;
+    padding: 10px;
+}
+
+.mobile-nav li {
+    font-family: "Shafarik", serif;
+    padding: 10px;
+}
+
+.mobile-nav a {
+    font-family: "Shafarik", serif;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-nav a:hover {
+    background: #d35400;
+}
+
+/* Show mobile menu when checked */
+#mobile-menu:checked ~ .mobile-nav {
+    display: block;
+}
+
+/*Hero Section*/
+.background-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.text-overlay h1 {
+    font-size: 48px;
+    font-family: "Shafarik", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-overlay h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Satisfy", serif;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #d35400;
+    color: white;
+    border: none;
+    font-family: "Shafarik", serif;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #a04000;
+}
+
+/* ==========================
+   Content Section (Holder1)
+   ========================== */
+.holder1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 40px;
+}
+
+.text1 {
+    max-width: 500px;
+}
+
+.text1 h2 {
+    font-size: 32px;
+    color: #d35400;
+    font-family: "Satisfy", serif;
+}
+
+.text1 h1{
+    font-family: "Shafarik", serif;
+}
+
+.text1 p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+    font-family: "Shafarik", serif;
+}
+
+.img1 img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.order{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.order h2{
+    font-family: "Satisfy", serif;
+    font-size: 30px;
+}
+
+.order h1{
+    font-family: "Shafarik", serif;
+    font-weight: bolder;
+}
+
+.reserv{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 100px 50px;
+    gap: 2rem;
+}
+
+.Table1 img{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px whitesmoke;
+}
+
+.Table1 h1{
+    text-align: center;
+    font-family: "Satisfy", serif;
+    font-size: 30px;
+    color: #d35400;
+}
+
+.Table1 p{
+    text-align: center;
+    font-family: "Shafarik", serif;
+}
+
+.Table2 img{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px whitesmoke;
+}
+
+.Table2 h1{
+    text-align: center;
+    font-family: "Satisfy", serif;
+    font-size: 30px;
+    color: #d35400;
+}
+
+.Table2 p{
+    text-align: center;
+    font-family: "Shafarik", serif;
+}
+
+.Table3 img{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px whitesmoke;
+}
+
+.Table3 h1{
+    text-align: center;
+    font-family: "Satisfy", serif;
+    font-size: 30px;
+    color: #d35400;
+}
+
+.Table3 p{
+    text-align: center;
+    font-family: "Shafarik", serif;
+}
+
+.Our-Menu{
+    padding: 100px 50px;
+    background-color: rgb(245, 242, 235);
+    height: 175vh;
+    width: 100%;
+    text-align: center;
+}
+
+.Our-Menu h2{
+    font-family: "Satisfy", serif;
+    font-size: 40px;
+    color: rgb(204, 34, 40);
+}
+
+.Our-Menu h1{
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+    font-family: "Shafarik", serif;
+}
+
+.menu-main-holder{
+    padding: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-img1 img{
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.menu-img2 img{
+    height: 220px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.menu-img3 img{
+    height: 220px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.second-menu-holder{
+    padding: 20px;
+    display: flex;
+    gap: 3rem;
+}
+
+.menu-img4 img{
+    height: 300px;
+    width: 900px;
+    border-radius: 20px;
+}
+
+.menu-img5 img{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.menu-img-holder{
+    display: block;
+}
+
+#offered-menu{
+  text-align: center;
+  padding: 30px;
+}
+
+#offered-menu h1{
+  text-align: center;
+  padding: 30px;
+  width: 500px;
+  font-weight: bolder;
+  color: black;
+}
+
+.all-img-holder{
+  display: flex;
+}
+
+#menu-img-holder img{
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+#menu-img-holder h1{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 550px;
+  font-family: "Shafarik", serif;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+}
+
+.first-2-img{
+  display: flex;
+}
+
+#main-menu h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Shafarik", serif;
+}
+
+.meal-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-menu{
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.pizza{
+  width: 400px;
+  height: 470px;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 10px 5px gray;
+  border-radius: 20px;
+}
+
+.pizza-desc{
+  text-align: center;
+}
+
+.pizza h3{
+  color: #b34700;
+  font-family: "Satisfy", serif;
+  font-size: 25px;
+}
+
+.pizza img{
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#main-menu h2{
+  font-family: "Satisfy", serif;
+  text-align: center;
+  font-size: 40px;
+  color: #b34700;
+}
+
+.reservation{
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.booking{
+    width: 50%;
+    text-align: center;
+}
+
+.booking h2{
+    color: rgb(204, 34, 40);
+    text-align: center;
+    font-family: "Satisfy", serif;
+    font-size: 40px;
+}
+
+.booking h1{
+    font-weight: bolder;
+    color: black;
+    font-size: 40px;
+    font-family: "Shafarik", serif;
+}
+
+.booking-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#footer{
+    background-color: rgb(34, 34, 34);
+    padding: 30px 40px 0px 40px;
+}
+
+.end{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.item1{
+    width: 390px;
+    font-size: 14px;
+}
+
+.item2{
+    width: 390px;
+    font-size: 14px;
+}
+
+.item3{
+    width: 390px;
+    font-size: 14px;
+}
+
+.item1 h3{
+    color: white;
+    font-family: "Shafarik", serif;
+}
+
+.item2 h3{
+    color: white;
+    font-family: "Shafarik", serif;
+}
+
+.item3 h3{
+    color: white;
+    font-family: "Shafarik", serif;
+}
+
+.item1 p{
+    color: white;
+    font-family: "Shafarik", serif;
+}
+
+.item2 p{
+    color: white;
+    font-family: "Shafarik", serif;
+}
+
+.item3 p{
+    color: white;
+    font-family: "Shafarik", serif;
+}
+
+.copywrite{
+    font-family: "Shafarik", serif;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+  .reservation {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  .booking {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .booking-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Menu-start */
+.our-menu img{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.our-menu-txt{
+    position: absolute;
+}
+
+.our-menu-txt h1{
+    margin-top: -400px;
+    margin-left: 500px;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Shafarik", serif;
+}
+
+.menu-prices{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu img{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.lunch-txt{
+    position: absolute;
+}
+
+.lunch-txt h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 500px;
+    color: white;
+}
+
+.lunch-holder2{
+    gap: 5rem;
+    display: flex;
+    padding: 40px 50px 40px 50px;
+}
+
+.side1 h1{
+    font-family: "Shafarik", serif;
+}
+
+.side1 h3{
+    font-family: "Shafarik", serif;
+}
+
+.lunch1{
+    display: flex;
+    gap: 1rem;
+}
+
+.lunch2{
+    display: flex;
+    gap: 1rem;
+}
+
+.lunch3{
+    display: flex;
+    gap: 1rem;
+}
+
+.lunch1-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.lunch1-txt{
+    text-align: justify;
+    margin-top: 60px;
+}
+
+.lunch1-txt h1{
+    font-family: "Shafarik", serif
+}
+
+.lunch-txt h1{
+    font-family: "Shafarik", serif
+}
+
+/* Modified Responsive Styles */
+  
+  /* General Responsive Improvements */
+  .Table1 img, 
+  .Table2 img, 
+  .Table3 img,
+  .menu-img1 img,
+  .menu-img2 img,
+  .menu-img3 img,
+  .menu-img4 img,
+  .menu-img5 img {
+    max-width: 100%; /* Ensure all images are contained */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Remove all fixed height declarations */
+  .Our-Menu,
+  .end,
+  .our-menu img {
+    height: auto;
+    min-height: 50vh; /* Use min-height instead of fixed height */
+  }
+  
+  /* Fix overflow in text elements */
+  .text1 h1,
+  .booking h1 {
+    word-wrap: break-word;
+  }
+  
+  /* Improve touch targets for mobile */
+  .nav-list li,
+  .mobile-nav li {
+    padding: 8px 0;
+  }
+  
+  /* Enhance mobile menu toggle */
+  #mobile-menu:checked ~ .mobile-nav {
+    right: 0;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from { right: -200px; }
+    to { right: 0; }
+  }
+
+  /* Reservation-styling-start */
+  .reserv-img-holder img{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  .reserv-txt-holder{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 450px;
+    font-family: "Shafarik", serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .reserv-txt-holder h1{
+    font-family: "Shafarik", serif;
+  }
+  
+  .booking-line1{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .booktable-holder h3{
+    color: red;
+    font-family: "Satisfy", serif;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .booktable-holder h1{
+    color: black;
+    font-family: "Shafarik", serif;
+    font-size: 50px;
+    text-align: center;
+  }
+  .date-holder input{
+    padding: 10px 50px 10px 2px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+  }
+
+  .name-holder input{
+    padding: 10px 50px 10px 2px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+  }
+
+  .phone-number-holder input{
+    padding: 10px 50px 10px 2px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+  }
+
+  .email-holder input{
+    padding: 10px 50px 10px 2px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+  }
+
+  .booking-line2{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .booktable-btn button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 560px;
+    margin-top: 2rem;
+
+    &:hover{
+        cursor: pointer;
+        padding: 20px 40px;
+        transition: 1s;
+    }
+  }
+   /* Reservation-styling-end*/
+
+   /* Gallery-styling-start */
+
+   .gallery-txt-holder{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 550px;
+    font-family: "Shafarik", serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .gallery-txt-holder h1{
+    font-family: "Shafarik", serif;
+  }
+
+  .firstlineholdeR{
+    display: flex;
+    margin-left: 9rem;
+    gap: 2rem;
+  }
+
+  .gallery-img-holder1 img{
+    height: 120vh;
+    width: 100%;
+  }
+
+
+  /* Gallery-styling-end */
+
+  .vision-missionholder{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .v-m-desc{
+    text-align: center;
+    text-decoration: underline red 4px;
+  }
+
+  .vision{
+    background-color: #b34700;
+    border-radius: 20px;
+    margin-top: 10vh;
+    padding: 50px;
+    box-shadow: 1px 1px 5px #333;
+    text-align: center;
+    font-family: "Shafarik", serif;
+  }
+
+  .vision p{
+    color: white;
+    width: 400px;
+  }
+
+  .mission{
+    background-color: #b34700;
+    border-radius: 20px;
+    margin-top: 10vh;
+    padding: 50px;
+    box-shadow: 1px 1px 5px #333;
+    text-align: center;
+    font-family: "Shafarik", serif;
+  }
+  .mission p{
+    color: white;
+    width: 400px;
+  }
+
+
+
+  /* About-styling-start */
+  .about-img-holder1 img{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .about-txt-holder1{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 550px;
+    font-family: "Shafarik", serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .about-txt-holder1 h1{
+    font-family: "Shafarik", serif;
+  }
+
+  .first-line h3{
+    font-size: 30px;
+    font-family: "Satisfy", serif;
+    color: red;
+    text-align: center;
+  }
+
+  .second-line h1{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Shafarik", serif;
+    text-align: center;
+  }
+  .last-line{
+    text-align: center;
+  }
+
+  .OUR-STORY-holder{
+    padding: 20px 250px;
+  }
+  .contact-info{
+    width: 100%;
+    color: #333;
+  }
+  .contact-img-holder img{
+    width: 100%;
+    height: 70vh;
+  }
+
+  .contact-form{
+    padding: 50px;
+  }
+
+  .contact-address{
+    margin-top: 10px;
+    margin-left: 200px;
+    width: 250px;
+    text-align: left;
+  }
+  .contact-tel{
+    margin-top: 10px;
+    margin-left: 230px;
+    width: 250px;
+    text-align: left;
+  }
+  .contact-mail{
+    margin-top: 10px;
+    margin-left: 230px;
+    width: 250px;
+    text-align: left;
+  }
+  .map{
+    width: 100%;
+  }
+
+  .Contactholder{
+    margin-top: 10vh;
+    text-align: center;
+    color: #b34700;
+    font-family: "Shafarik", serif;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Name{
+    height: 40px;
+    width: 300px;
+    padding: 10px 5px;
+  }
+
+  .email{
+    height: 40px;
+    width: 300px;
+    padding: 10px 5px;
+  }
+  
+  .Contactholder a{
+    color: #b34700;
+    text-decoration: none;
+
+    &:hover{
+      font-weight: bold;
+      transition:  1s;
+    }
+  }
+
+  .call{
+    margin-top: 150px;
+    padding: 80px;
+    box-shadow: 1px 1px 5px #333;
+  }
+
+  .mail{
+    margin-top: 150px;
+    padding: 50px;
+    box-shadow: 1px 1px 5px #333;
+  }
+
+  .phone-number ~ div >  a{
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+  }
+
+  .Box1 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    &:hover{
+      cursor: pointer;
+      width: 320px;
+      height: 320px;
+      transition: 1s;
+    }
+  }
+  .Box2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    &:hover{
+      cursor: pointer;
+      width: 320px;
+      height: 320px;
+      transition: 1s;
+    }
+  }
+  .Box3 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    &:hover{
+      cursor: pointer;
+      width: 320px;
+      height: 320px;
+      transition: 1s;
+    }
+  }
+
+  .contact-img-holder img{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  .contact-img-holder{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+  }
+
+  /* About-styling-end */
+  @media (max-width: 992px) {
+    #menu-img-holder img{
+      height: 50vh;
+      width: 100%;
+      position: relative;
+    }
+    
+    #menu-img-holder h1{
+      position: absolute;
+      margin-top: -230px;
+      margin-left: 120px;
+      font-family: "Shafarik", serif;
+      font-size: 60px;
+      font-weight: bolder;
+      color: white;
+    }
+    .meal-container{
+      display: block;
+      justify-content: space-around;
+    }
+    .pizza{
+      width: 100%;
+      height: 450px;
+      border: 1px solid whitesmoke;
+      box-shadow: 5px 10px 5px gray;
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+    .reserv-img-holder img{
+        height: 60vh;
+        width: 100%;
+        position: relative;
+      }
+      .reserv-txt-holder{
+        position: absolute;
+        margin-top: -240px;
+        margin-left: 70px;
+        font-family: "Shafarik", serif;
+        font-size: 16px;
+        font-weight: bolder;
+        color: white;
+      }
+    
+      .reserv-txt-holder h1{
+        font-family: "Shafarik", serif;
+      }
+    
+      .booking-line1{
+        display: block;
+        justify-content: center;
+        gap: 2rem;
+      }
+    
+      .booktable-holder h3{
+        color: red;
+        font-family: "Satisfy", serif;
+        font-size: 30px;
+        text-align: center;
+      }
+    
+      .booktable-holder h1{
+        color: black;
+        font-family: "Shafarik", serif;
+        font-size: 50px;
+        text-align: center;
+      }
+      .date-holder input{
+        padding: 10px 50px 10px 2px;
+        border-radius: 5px;
+        border: 0.5px solid gray;
+      }
+    
+      .name-holder input{
+        padding: 10px 50px 10px 2px;
+        border-radius: 5px;
+        border: 0.5px solid gray;
+      }
+    
+      .phone-number-holder input{
+        padding: 10px 50px 10px 2px;
+        border-radius: 5px;
+        border: 0.5px solid gray;
+      }
+    
+      .email-holder input{
+        padding: 10px 50px 10px 2px;
+        border-radius: 5px;
+        border: 0.5px solid gray;
+      }
+    
+      .booking-line2{
+        display: block;
+        justify-content: center;
+        gap: 3rem;
+      }
+      .booktable-btn button{
+        padding: 10px 30px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-left: 140px;
+        margin-top: 2rem;
+    
+        &:hover{
+            cursor: pointer;
+            padding: 20px 40px;
+            transition: 1s;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .about-img-holder1 img{
+            height: 50vh;
+            position: relative;
+          }
+        
+          .about-txt-holder1{
+            position: absolute;
+            margin-top: -200px;
+            margin-left: 80px;
+            font-family: "Shafarik", serif;
+            font-size: 25px;
+            font-weight: bolder;
+            color: white;
+          }
+        
+          .about-txt-holder1 h1{
+            font-family: "Shafarik", serif;
+          }
+        
+          .first-line h3{
+            font-size: 30px;
+            font-family: "Satisfy", serif;
+            color: red;
+            text-align: center;
+          }
+        
+          .second-line h1{
+            font-size: 50px;
+            font-weight: bolder;
+            font-family: "Shafarik", serif;
+            text-align: center;
+          }
+          .last-line{
+            text-align: center;
+          }
+        
+          .OUR-STORY-holder{
+            padding: 20px;
+          }
+    }
+
+    @media (max-width: 992px) {
+      .header-menu img{
+          width: 100%;
+          height: 40vh;
+          position: relative;
+      }
+      
+      .lunch-txt{
+          position: absolute;
+      }
+      
+      .lunch-txt h1{
+          text-align: center;
+          font-size: 50px;
+          font-weight: bolder;
+          position: absolute;
+          margin-top: -200px;
+          margin-left: 90px;
+          color: white;
+      }
+  
+      /* .lunch2{
+          display: block;
+          gap: 1rem;
+      } */
+      .lunch-holder2{
+          gap: 5rem;
+          display: block;
+          padding: 40px 50px 40px 50px;
+      }
+      .our-menu-txt{
+          position: absolute;
+      }
+      
+      .our-menu-txt h1{
+          margin-top: -200px;
+          margin-left: 70px;
+          color: white;
+          font-size: 50px;
+          font-weight: bolder;
+          font-family: "Shafarik", serif;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* Unified mobile breakpoint */
+      .navbar {
+        padding: 10px 0;
+      }
+    
+      .main-nav {
+        padding: 0 20px;
+      }
+    
+      .nav-logo img {
+        width: 60px;
+      }
+    
+      .background-img {
+        height: 70vh; /* Reduced hero height for mobile */
+      }
+    
+      .holder1 {
+        gap: 20px;
+        padding: 30px 15px !important;
+      }
+    
+      .reserv {
+        padding: 30px 15px;
+      }
+    
+      .Our-Menu {
+        padding: 50px 15px !important;
+        min-height: auto; /* Replace fixed height */
+      }
+    
+      .menu-prices {
+        padding: 30px 15px;
+        flex-direction: column;
+      }
+    
+      .reservation {
+        padding: 30px 15px !important;
+      }
+    
+      .booking-img img {
+        max-width: 100%; /* Ensure image containment */
+      }
+    
+      /* Fix out-of-mediaquery declaration */
+      .reservation {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 360px) {
+      #menu-img-holder img{
+        height: 30vh;
+        width: 100%;
+        position: relative;
+      }
+      
+      #menu-img-holder h1{
+        position: absolute;
+        margin-top: -150px;
+        margin-left: 80px;
+        font-family: "Shafarik", serif;
+        font-size: 60px;
+        font-weight: bolder;
+        color: white;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text-overlay h1 {
+        font-size: 24px;
+      }
+    
+      .text-overlay h3 {
+        font-size: 14px;
+      }
+    
+      .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+    
+      .img1 img {
+        height: auto; /* Remove fixed height */
+      }
+    
+      .menu-main-holder,
+      .second-menu-holder {
+        gap: 1rem !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .end {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 30px 20px;
+      }
+    
+      .item1, .item2, .item3 {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .reserv {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+      }
+    
+      .Table1, .Table2, .Table3 {
+        margin-bottom: 2rem;
+      }
+    
+      .Table1 img, .Table2 img, .Table3 img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .Our-Menu {
+          height: auto;
+          padding: 50px 20px;
+        }
+      
+        .menu-main-holder, .second-menu-holder {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .menu-img1 img, .menu-img2 img, .menu-img3 img,
+        .menu-img4 img, .menu-img5 img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+  
+    }
+
+    @media (max-width: 480px) {
+      .text-overlay h1 {
+          font-size: 28px;
+      }
+  
+      .text-overlay h3 {
+          font-size: 16px;
+      }
+  
+      .btn {
+          font-size: 14px;
+          padding: 8px 12px;
+      }
+  
+      .text1 h1 {
+          font-size: 28px;
+      }
+  
+      .text1 p {
+          font-size: 14px;
+      }
+  }
+
+  /*Responsive Design*/
+@media (max-width: 1024px) {
+  .holder1 {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px;
+  }
+
+  .img1 img {
+      width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust body text */
+  body {
+      font-size: 14px;
+  }
+
+  /* Mobile Navigation */
+  .menu-icon {
+      display: block;
+  }
+
+  .nav-list {
+      display: none;
+  }
+
+  .text-overlay h1 {
+      font-size: 32px;
+  }
+
+  .text-overlay h3 {
+      font-size: 18px;
+  }
+
+  .btn {
+      padding: 10px 16px;
+      font-size: 16px;
+  }
+
+  .holder1 {
+      padding: 20px;
+  }
+
+  .text1 {
+      margin: 2rem auto;
+      width: 90%;
+  }
+
+  .img1 img {
+      width: 90%;
+      height: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-img-holder1 img{
+    height: 80vh;
+    width: 100%;
+  }
+
+  .gallery-txt-holder h1{
+    margin-top:  20px;
+    margin-left: -480px;
+  }
+
+  .firstlineholdeR{
+    display: block;
+    margin-left: 35px;
+    gap: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .gallery-img-holder1 img{
+    height: 80vh;
+    width: 100%;
+  }
+
+  .gallery-txt-holder h1{
+    margin-top:  20px;
+    margin-left: -350px;
+  }
+
+  .firstlineholdeR{
+    display: block;
+    margin-left: 130px;
+    gap: 1rem;
+    padding: 10px;
+  }
+}
+}
+
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d35400; /* Scroll thumb color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b34700; /* Darker shade on hover */
+}

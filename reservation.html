@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="static/image/download.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5011a2023.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <a href="index.html"><img src="static/image/logo.png.webp" width="80px" alt="Logo"></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <label class="menu-icon" for="mobile-menu">
+                <i class="fa-solid fa-bars fa-1x"></i>
+            </label>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="gallary.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+            <!-- Mobile Navigation -->
+            <input type="checkbox" id="mobile-menu">
+            <ul class="mobile-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="gallary.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="reserv-main">
+        <div class="img-txt-holder-reservation">
+            <div class="reserv-img-holder">
+                <img src="static/image/pexels-mikhail-nilov-7820325.jpg" alt="">
+            </div>
+            <div class="reserv-txt-holder">
+                <h1>RESERVATION</h1>
+            </div>
+        </div>
+        <div class="booktable-holder">
+            <h3>Reservation</h3>
+            <h1>BOOK TABLE</h1>
+        </div>
+
+        <div class="booking-holder">
+            <div class="booking-line1">
+                            <div class="date-holder">
+                                <!-- Date of birth start -->
+                                <label for="Dob">Date</label>
+                                <br>
+                                <input type="date" id="Dob" name="Dob">
+                                <!-- Date of birth end -->
+                            </div>
+                            <div class="time-holder">
+                                <label for="">Time</label>
+                                <br>
+                                <select name="" id="">
+                                    <option value="Paypal">9:00</option>
+                                    <option value="Payoneer">9:30</option>
+                                    <option value="Mastercard">10:00</option>
+                                    <option value="CreditCard">10:30</option>
+                                    <option value="Paypal">11:00</option>
+                                    <option value="Payoneer">11:30</option>
+                                    <option value="Mastercard">12:00</option>
+                                    <option value="CreditCard">12:30</option>
+                                    <option value="Mastercard">13:00</option>
+                                    <option value="CreditCard">13:30</option>
+                                    <option value="Paypal">14:00</option>
+                                    <option value="Payoneer">14:30</option>
+                                    <option value="Mastercard">15:00</option>
+                                    <option value="CreditCard">15:30</option>
+                                    <option value="Mastercard">16:00</option>
+                                    <option value="CreditCard">16:30</option>
+                                    <option value="Paypal">17:00</option>
+                                    <option value="Payoneer">17:30</option>
+                                    <option value="Mastercard">18:00</option>
+                                </select>
+                            </div>
+                            <div class="People-holder">
+                                <label for="">People</label>
+                                <br>
+                                <select name="" id="">
+                                    <option value="Paypal">1 person</option>
+                                    <option value="Payoneer">2 people</option>
+                                    <option value="Mastercard">3 people</option>
+                                    <option value="CreditCard">4 people</option>
+                                    <option value="Paypal">5 people</option>
+                                    <option value="Payoneer">6 people</option>
+                                    <option value="Mastercard">7 people</option>
+                                    <option value="CreditCard">8 people</option>
+                                    <option value="Mastercard">9 people</option>
+                                    <option value="CreditCard">10 people</option>
+                                    <option value="Paypal">11 people</option>
+                                    <option value="Payoneer">12 people</option>
+                                </select>
+                            </div>
+            </div>
+            <div class="booking-line2">
+                <div class="name-holder">
+                            <!-- FirstName-Start -->
+                            <label for="">Name</label>
+                            <br>
+                            <input type="text" placeholder="Enter Your Name" id="FirstName" name="Firstname" required minlength="4" maxlength="15">
+                            <!-- FirstName-End -->
+                </div>
+                <div class="phone-number-holder">
+                            <!-- phoneNumber-start -->
+                            <label for="">PhoneNumber</label>
+                            <br>
+                            <input type="tel" placeholder="PhoneNumber" id="PhoneNumber" required pattern="^\+234\d{3}\d{3}\d{4}">
+                            <!-- phoneNumber-end -->
+                </div>
+                <div class="email-holder">
+                                <!-- email-start -->
+                                <label for="Email">Email</label>
+                                <br>
+                                <input type="email" required placeholder="Enter Your Email" id="Email" name="email">
+                                <!-- email-end -->
+                </div>
+            </div>
+            <div class="booktable-btn">
+                <button type="button">
+                    Book Table
+                </button>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <footer id="footer">
+        <div class="end">
+           <div class="item1">
+               <h3>CONTACT US</h3>
+               <br>
+               <p>
+                   Visit us at:
+                   15, Yusuf Olatunji, Off Liasu RD, Egbe Idimu, Lagos
+                   <br>
+                   <br>
+                   Phone: +234 912-477-0662
+                   <br>
+                   <br>
+                   Email: info@patoplace.com
+                   <br>
+                   <br>
+                   We’d love to hear from you! Feel free to reach out for reservations, inquiries, or feedback.
+   
+               </p>
+           </div>
+           <div class="item2">
+               <h3>LATEST TWITTER</h3>
+               <br>
+               <p>
+                   Stay connected with us! Follow us on Twitter for the latest updates, special offers, and behind-the-scenes moments. Join the conversation: @YourRestaurant
+               </p>
+           </div>
+           <div class="item3">
+               <h3>GALLERY</h3>
+               <br>
+               <p>
+                   Explore our beautiful dining ambiance, delicious dishes, and special moments shared by our guests. View our full gallery and get inspired for your next visit!
+               </p>
+           </div>
+        </div>
+           <div class="copywrite">
+               &COPY; 2025 Pato Place by AY||TECH!
+           </div>
+       </footer>
+</body>
+</html>
