@@ -869,6 +869,11 @@ img {
     position: relative;
   }
 
+  .v-m-desc{
+    text-align: center;
+    text-decoration: underline black 4px;
+  }
+
   .about-txt-holder1{
     position: absolute;
     margin-top: -300px;
@@ -1038,6 +1043,13 @@ img {
     width: 100%;
   }
 
+  .Message{
+    height: 150px;
+    width: 350px;
+    margin: 100px;
+    padding: 10px 5px;
+  }
+
   /* About-styling-end */
   @media (max-width: 992px) {
     #menu-img-holder img{
@@ -1128,7 +1140,81 @@ img {
         border-radius: 5px;
         border: 0.5px solid gray;
       }
-    
+
+      .gallery-img-holder1 img{
+        height: 60vh;
+        width: 100%;
+      }
+      .gallery-txt-holder{
+        display: none;
+      }
+
+      .holdeR{
+        display: block;
+        margin-left: -90px;
+      }
+
+      .Contactholder{
+        display: block;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .side2{
+        display: block;
+        margin-left: -100px;
+      }
+
+      .contact-img-holder img{
+        width: 100%;
+        height: 60vh;
+      }
+
+      .Name{
+        border: 1px solid #a04000;
+        border-radius: 10px;
+      }
+
+      .email{
+        border: 1px solid #a04000;
+        border-radius: 10px;
+      }
+
+      .booking-line1{
+        display: block;
+        margin-left: 30px;
+      }
+
+    .booking-line2{
+      display: block;
+      margin-left: 30px;
+    }
+
+      .Message{
+        margin-top: 10px;
+        display: block;
+        margin-left: 45px;
+        width: 300px;
+        resize: none;
+        border: 1px solid #a04000;
+        border-radius: 10px;
+      }
+      
+      
+      .vision-missionholder{
+        display: block;
+        width: 95%;
+        margin: auto;
+      }
+
+      .vision p{
+        width: 95%;
+      }
+
+      .mission p{
+        width: 95%;
+      }
+
       .booking-line2{
         display: block;
         justify-content: center;
@@ -1147,6 +1233,185 @@ img {
             cursor: pointer;
             padding: 20px 40px;
             transition: 1s;
+        }
+        .about-img-holder1 img{
+          height: 120vh;
+          width: 100%;
+          position: relative;
+        }
+      
+        .v-m-desc{
+          text-align: center;
+          text-decoration: underline black 4px;
+        }
+      
+        .about-txt-holder1{
+          position: absolute;
+          margin-top: -300px;
+          margin-left: 550px;
+          font-family: "Shafarik", serif;
+          font-size: 25px;
+          font-weight: bolder;
+          color: white;
+        }
+      
+        .about-txt-holder1 h1{
+          font-family: "Shafarik", serif;
+        }
+      
+        .first-line h3{
+          font-size: 30px;
+          font-family: "Satisfy", serif;
+          color: red;
+          text-align: center;
+        }
+      
+        .second-line h1{
+          font-size: 50px;
+          font-weight: bolder;
+          font-family: "Shafarik", serif;
+          text-align: center;
+        }
+        .last-line{
+          text-align: center;
+        }
+      
+        .OUR-STORY-holder{
+          padding: 20px 250px;
+        }
+        .contact-info{
+          width: 100%;
+          color: #333;
+        }
+        .contact-img-holder img{
+          width: 100%;
+          height: 70vh;
+        }
+      
+        .contact-form{
+          padding: 50px;
+        }
+      
+        .contact-address{
+          margin-top: 10px;
+          margin-left: 200px;
+          width: 250px;
+          text-align: left;
+        }
+        .contact-tel{
+          margin-top: 10px;
+          margin-left: 230px;
+          width: 250px;
+          text-align: left;
+        }
+        .contact-mail{
+          margin-top: 10px;
+          margin-left: 230px;
+          width: 250px;
+          text-align: left;
+        }
+        .map{
+          width: 100%;
+        }
+      
+        .Contactholder{
+          margin-top: 10vh;
+          text-align: center;
+          color: #b34700;
+          font-family: "Shafarik", serif;
+          padding-bottom: 50px;
+          display: block;
+          justify-content: space-evenly;
+        }
+      
+        .Name{
+          height: 40px;
+          width: 300px;
+          padding: 10px 5px;
+        }
+      
+        .email{
+          height: 40px;
+          width: 300px;
+          padding: 10px 5px;
+        }
+        
+        .Contactholder a{
+          color: #b34700;
+          text-decoration: none;
+      
+          &:hover{
+            font-weight: bold;
+            transition:  1s;
+          }
+        }
+      
+        .call{
+          margin-top: 150px;
+          padding: 80px;
+          box-shadow: 1px 1px 5px #333;
+        }
+      
+        .mail{
+          margin-top: 150px;
+          padding: 50px;
+          box-shadow: 1px 1px 5px #333;
+        }
+      
+        .phone-number ~ div >  a{
+          text-decoration: none;
+          color: #333;
+          display: block;
+          justify-content: center;
+          gap: 1rem;
+          padding: 10px;
+        }
+      
+        .Box1 img{
+          width: 300px;
+          height: 300px;
+          border-radius: 20px;
+          &:hover{
+            cursor: pointer;
+            width: 320px;
+            height: 320px;
+            transition: 1s;
+          }
+        }
+        .Box2 img{
+          width: 300px;
+          height: 300px;
+          border-radius: 20px;
+          &:hover{
+            cursor: pointer;
+            width: 320px;
+            height: 320px;
+            transition: 1s;
+          }
+        }
+        .Box3 img{
+          width: 300px;
+          height: 300px;
+          border-radius: 20px;
+          &:hover{
+            cursor: pointer;
+            width: 320px;
+            height: 320px;
+            transition: 1s;
+          }
+        }
+      
+        .contact-img-holder img{
+          width: 100%;
+          height: 100%;
+          position: sticky;
+          top: 0;
+        }
+      
+        .contact-img-holder{
+          height: 100vh;
+          display: block;
+          width: 100%;
         }
     }
 
