@@ -1,49 +1,49 @@
 [
     {
         "id": 1,
-        "name":" LD01 LOUNGE CHAIR",
+        "name":" ONION BREAD WITH GARLIC, CHEESE AND HERBS",
         "price": 200,
         "image": "static/image/starter5.jpeg"
     },
     {
         "id": 2,
-        "name":" LD02 LOUNGE CHAIR",
+        "name":" DESSERT PLATTER",
         "price": 250,
         "image": "static/image/starter15.jpeg"
     },
     {
         "id": 3,
-        "name":" LD03 LOUNGE CHAIR",
+        "name":" HONEY COMB",
         "price": 290,
         "image": "static/image/starter9.jpeg"
     },
     {
         "id": 4,
-        "name":" LD04 LOUNGE CHAIR",
+        "name":" POUNDED YAM WITH VEGETABLES",
         "price": 200,
         "image": "static/image/localfood1.jpeg"
     },
     {
         "id": 5,
-        "name":" LD05 LOUNGE CHAIR",
+        "name":" AMALA AND EWEDU",
         "price": 300,
         "image": "static/image/localfood2.jpeg"
     },
     {
         "id": 6,
-        "name":" LD06 LOUNGE CHAIR",
+        "name":" YAM AND EGG SAUCE",
         "price": 200,
         "image": "static/image/localfood3.jpeg"
     },
     {
         "id": 7,
-        "name":" LD07 LOUNGE CHAIR",
+        "name":" NORISHING JOLLOF RICE AND CHICKEN",
         "price": 200,
         "image": "static/image/localfood4.jpeg"
     },
     {
         "id": 8,
-        "name":" LD08 LOUNGE CHAIR",
+        "name":" FRIES PLANTAIN",
         "price": 200,
         "image": "static/image/localfood5.jpeg"
     }
