@@ -1,207 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e5011a2023.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="static/image/download.png" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e5011a2023.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="static/image/download.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body class="">
+
     <header class="navbar">
-        <nav class="main-nav">
-            <div class="nav-logo">
-                <a href="index.html"><img src="static/image/logo.png.webp" width="80px" alt="Logo"></a>
+      <nav class="main-nav">
+          <div class="nav-logo">
+              <a href="index.html"><img src="static/image/logo.png.webp" width="80px" alt="Logo"></a>
+          </div>
+          
+          <!-- Mobile Menu Button -->
+          <label class="menu-icon" for="mobile-menu">
+              <i class="fa-solid fa-bars fa-1x"></i>
+          </label>
+
+          <!-- Desktop Navigation -->
+          <ul class="nav-list">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="reservation.html">RESERVATION</a></li>
+              <li><a href="gallary.html">GALLERY</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+
+          <!-- Mobile Navigation -->
+          <input type="checkbox" id="mobile-menu">
+          <ul class="mobile-nav">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="reservation.html">RESERVATION</a></li>
+              <li><a href="gallary.html">GALLERY</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <main class="menuCart">
+      <div class="container">
+        <header>
+            <div class="title">PRODUCT LIST</div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
             </div>
-
-            <!-- Mobile Menu Button -->
-            <label class="menu-icon" for="mobile-menu">
-                <i class="fa-solid fa-bars fa-1x"></i>
-            </label>
-
-            <!-- Desktop Navigation -->
-            <ul class="nav-list">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="reservation.html">RESERVATION</a></li>
-                <li><a href="gallary.html">GALLERY</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-                <li><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></li>
-            </ul>
-
-            <!-- Mobile Navigation -->
-            <input type="checkbox" id="mobile-menu">
-            <ul class="mobile-nav">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="reservation.html">RESERVATION</a></li>
-                <li><a href="gallary.html">GALLERY</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <div id="menu-img-holder">
-        <img src="static/image/pexels-solliefoto-313700.jpg" alt="">
+        </header>
+        <div class="listProduct">
+  
+        </div>
     </div>
-
-    <main id="main-menu">
-        <h2 style="font-family: Satisfy, serif;">ORDER NOW</h2>
-        <br>
-        <hr color="#b34700">
-        <br>
-        <div class="meal">
-            <h1>Meals</h1>
-            <div class="meal-container">
-                <div class="pizza">
-                    <img src="static/image/pexels-grizzlybear-1166120.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Pepperoni Pizza</h3>
-                        <p>Crispy, Smoky, Unapologetically Delicious
-                            Hand-stretched sourdough crust, blistered to perfection in our oak-fired oven.</p>
-                        <h3>Price: $10.00</h3>
-                        <button class="btn">Order Now</button>
-                    </div>
-                </div>
-                <div class="pizza">
-                    <img src="static/image/pexels-valeriya-1639562.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Chicken Burger</h3>
-                        <p>Juicy, Crispy, Irresistible
-                            A succulent grilled chicken breast, marinated in garlic, paprika, and a touch of honey, piled high on a toasted brioche bun.</p>
-                        <h3>Price: $12.00</h3>
-                        <button class="btn">Order Now</button>
-                    </div>
-                </div>
-                <div class="pizza">
-                    <img src="static/image/pexels-enginakyurt-1527603.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Chicken Spaghetti</h3>
-                        <p>Tender shreds of roasted chicken tossed with al dente spaghetti in a velvety Parmesan-herb cream sauce, kissed with garlic and a hint of sun-dried tomatoes.</p>
-                        <h3>Price: $15.00</h3>
-                        <button class="btn">Order Now</button>
-                </div>
-            </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            
         </div>
-        <br>
-        <br>
-        <br>
-        <div class="dessert">
-            <h1>Desserts</h1>
-            <div class="meal-container">
-                <div class="pizza">
-                    <img src="static/image/pexels-ash-craig-122861-376464.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Pancake</h3>
-                        <p>Light-as-air buttermilk pancakes stacked high, drizzled with warm maple syrup and a pat of cinnamon-honey butter.</p>
-                        <h3>Price: $10.00</h3>
-                        <button class="btn">Order Now</button>
-                    </div>
-                </div>
-                <div class="pizza">
-                    <img src="static/image/pexels-donaldtong94-2205270.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Bubble Waffles</h3>
-                        <p>This is a bubble waffle dessert topped with fresh fruits, nuts, and a scoop of ice cream. The crispy golden waffle pairs perfectly with the sweetness.</p>
-                        <h3>Price: $12.00</h3>
-                        <button class="btn">Order Now</button>
-                    </div>
-                </div>
-                <div class="pizza" style="text-align: center;">
-                    <img src="static/image/pexels-valeriya-827513.jpg">
-                        <h3>Blueberry Cake</h3>
-                        <p>Layers of golden, featherlight sponge cake baked to perfection with free-range eggs and Madagascar vanilla bean.</p>
-                        <h3>Price: $15.00</h3>
-                        <button class="btn">Order Now</button>
-                </div>
-            </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
         </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="drinks">
-            <h1>Drinks</h1>
-            <div class="meal-container">
-                <div class="pizza">
-                    <img src="static/image/pexels-asphotograpy-103566.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Strawberry Milkshake</h3>
-                        <p>Salted Caramel Crunch,                            Strawberry Fields Forever,
-                        Cookies & Cream Dream.</p>
-                        <h3>Price: $10.00</h3>
-                        <button class="btn">Order Now</button>
-                    </div>
-                </div>
-                <div class="pizza">
-                    <img src="static/image/pexels-chuchuphinh-1148215.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Juice</h3>
-                        <p>Green Detox Glow,
-                            Berry Beet Bliss,   
-                            <br>                         
-                            Tropical Recharge.</p>
-                        <h3>Price: $12.00</h3>
-                        <button class="btn">Order Now</button>
-                    </div>
-                </div>
-                <div class="pizza">
-                    <img src="static/image/pexels-joshsorenson-990439.jpg" alt="">
-                    <div class="pizza-desc">
-                        <h3>Smoothe</h3>
-                        <p>Berry Bliss Bomb,                           Chocolate Peanut Butter Dream ,                           Sunrise Citrus Zing.</p>
-                        <h3>Price: $15.00</h3>
-                        <button class="btn">Order Now</button>
-                </div>
-            </div>
-        </div>
-        </div>
+    </div>
     </main>
-    <footer id="footer">
-        <div class="end">
-           <div class="item1">
-               <h3>CONTACT US</h3>
-               <br>
-               <p>
-                   Visit us at:
-                   15, Yusuf Olatunji, Off Liasu RD, Egbe Idimu, Lagos
-                   <br>
-                   <br>
-                   Phone: +234 912-477-0662
-                   <br>
-                   <br>
-                   Email: info@patoplace.com
-                   <br>
-                   <br>
-                   We’d love to hear from you! Feel free to reach out for reservations, inquiries, or feedback.
-   
-               </p>
-           </div>
-           <div class="item2">
-               <h3>LATEST TWITTER</h3>
-               <br>
-               <p>
-                   Stay connected with us! Follow us on Twitter for the latest updates, special offers, and behind-the-scenes moments. Join the conversation: @PATO PLACE
-               </p>
-           </div>
-           <div class="item3">
-               <h3>GALLERY</h3>
-               <br>
-               <p>
-                   Explore our beautiful dining ambiance, delicious dishes, and special moments shared by our guests. View our full gallery and get inspired for your next visit!
-               </p>
-           </div>
-        </div>
-           <div class="copywrite">
-               &COPY; 2024 Pato Place by AY||TECH!
-           </div>
-       </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
